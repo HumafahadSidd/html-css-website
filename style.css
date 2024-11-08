@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* span{
+    text-align: left;
+    margin-left: 2px; */
+
+h1, h2, h3, p, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0073e6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Responsive image styles */
+.img1, .img2 {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Form styles */
+form fieldset {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+}
+
+form label, form select, form input[type="radio"], form textarea, form input[type="checkbox"] {
+    display: block;
+    margin: 5px 0;
+}
+
+form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+/* Button styles */
+input[type="button"], input[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Embedded video */
+.video iframe {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section, footer, form fieldset {
+        padding: 10px;
+    }
+
+    .img, .img1, .img2, .pic3, .pic4 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+
+    form fieldset {
+        width: 90%;
+    }
+}
